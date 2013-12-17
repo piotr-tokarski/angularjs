@@ -28,6 +28,8 @@ function AppCtrl ($scope) {
       ]
     }
   };
+
+    $scope.sidebarURL =  'partials/airport.html'
     $scope.currentAirport = null;
 
     $scope.setAirport = function (code) {
