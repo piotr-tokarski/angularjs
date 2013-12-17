@@ -9,17 +9,19 @@
 <body>
 <div class="container" ng-controller="AppCtrl">
     <h1>AngulAir</h1>
+
     <div class="pull-left span6">
-    <ul>
-        <li ng-repeat="airport in airports">
-            <a href="" ng-click="setAirport(airport.code)">
-                {{airport.code}} - {{airport.city}}
-            </a>
-        </li>
-    </ul>
-    <p ng-show="currentAirport">Current airport: {{currentAirport.name}}</p>
+        <ul>
+            <li ng-repeat="airport in airports">
+                <a href="" ng-click="setAirport(airport.code)">
+                    {{airport.code}} - {{airport.city}}
+                </a>
+            </li>
+        </ul>
+
     </div>
-    <ng-include  class="span5" src="sidebarURL"></ng-include>
+
+    <ng-include class="span5" src="sidebarURL"></ng-include>
 </div>
 </body>
 </html>

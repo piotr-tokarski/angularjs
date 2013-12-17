@@ -1,11 +1,20 @@
 <div ng-show="currentAirport">
-  <h3>{{currentAirport.name}}</h3>
+    <h3>{{currentAirport.name}}</h3>
 
-  <h4>Destinations</h4>
+    <div>
+        <p>Current airport: {{currentAirport.code}}</p>
 
-  <ul>
-    <li ng-repeat="destination in currentAirport.destinations">
-      {{destination}}
-    </li>
-  </ul>
+        <form>
+            Name : <input type="text" ng-model="currentAirport.name"> <br/>
+            City : <input type="text" ng-model="currentAirport.city"> <br/>
+        </form>
+
+    </div>
+    <h4>Destinations</h4>
+
+    <ul>
+        <li ng-repeat="destination in currentAirport.destinations">
+            {{destination}}
+        </li>
+    </ul>
 </div>
