@@ -13,14 +13,14 @@
 		<h1>AngulAir</h1>
 
 		<ul class="nav nav-pills">
-			<li>
-				<a href="#">Destinations</a>
+			<li ng-class="destinationsActive">
+				<a href="#" ng-click="setActive('destinations')">Destinations</a>
 			</li>
-			<li>
-				<a href="#/flights">Flights</a>
+            <li ng-class="flightsActive">
+				<a href="#/flights" ng-click="setActive('flights')">Flights</a>
 			</li>
-			<li>
-				<a href="#/reservations">Reservations</a>
+            <li ng-class="reservationsActive">
+				<a href="#/reservations" ng-click="setActive('reservations')">Reservations</a>
 			</li>
 		</ul>
 
