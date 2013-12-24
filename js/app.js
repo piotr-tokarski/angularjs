@@ -1,18 +1,12 @@
 angular.module('airline', [])
-    .config(airlineRouter);
+	.config(airlineRouter);
 
-function airlineRouter($routeProvider) {
-    $routeProvider
-        .when('/', {templateUrl: 'partials/destinations.html',
-            controller: function ($scope) {
-                $scope.setActive('destinations');
-            }})
-        .when('/flights', {template: '<h3>Flights</h3>',
-        controller: function ($scope) {    $scope.setActive('flights')
-            }})
-        .when('/reservations', {template: '<h3>Your Reservations</h3>',
-        controller: function($scope){
-            $scope.setActive('reservations')
-            }})
-        ;
+function airlineRouter ($routeProvider) {
+	$routeProvider
+		.when('/', {templateUrl: 'partials/destinations.html',
+		 controller: 'DestinationsCtrl'})
+		.when('/flights', {template: '<h3>Flights</h3>',
+		 controller: 'FlightsCtrl'})
+		.when('/reservations', {template: '<h3>Your Reservations</h3>',
+		 controller: 'ReservationsCtrl'});
 }
