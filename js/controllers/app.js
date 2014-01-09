@@ -36,6 +36,16 @@ function AppCtrl ($scope) {
         "LAX",
         "DFW"
       ]
+    } ,
+      "LAX": {
+          "code": "LAX",
+          "name": "Los Angeles International Airport",
+          "city": "Los Angeles",
+          "destinations": [
+              "STL",
+              "MCI",
+              "PDX"
+          ]
     }
   };
 
